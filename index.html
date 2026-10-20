@@ -1,0 +1,1166 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Rooted Retreat Thailand</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap">
+<style>
+/* Layout: an immersive luxury-resort site. Full-bleed photography and deep lagoon bands alternate with airy ivory sections; serif display headlines, wide-tracked caps for UI like the logo. One committed light look with dark bands. */
+:root{
+  color-scheme:light;
+  --ivory:#F7F3EC;
+  --paper:#FFFFFF;
+  --ink:#1B1A17;
+  --muted:#6B645A;
+  --line:#E2DACB;
+  --lagoon:#0F2A2A;
+  --lagoon-2:#163837;
+  --sand:#CDBA9A;
+  --sun:#B9653D;
+  --on-dark:#F4EFE6;
+  --on-dark-muted:#B9C2B8;
+  --ph-1:linear-gradient(155deg,#1F4645 0%,#3E6A60 38%,#C9B48F 78%,#E9DCC4 100%);
+  --ph-2:linear-gradient(200deg,#E6D6BA 0%,#C2A27A 45%,#6E7E63 100%);
+  --ph-3:linear-gradient(170deg,#2B2A28 0%,#6B4A35 50%,#C88B5C 100%);
+  --f-display:"Cormorant Garamond","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --f-ui:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gutter-l:max(16px,env(safe-area-inset-left,0px));
+  --gutter-r:max(16px,env(safe-area-inset-right,0px));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--ivory);color:var(--ink);font-family:var(--f-ui);font-weight:300;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--lagoon)}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--sun);outline-offset:3px}
+img{display:block}
+.wrap{max-width:1240px;margin:0 auto;padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
+.narrow{max-width:720px}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+h1,h2,h3,h4{margin:0;font-weight:300;text-wrap:balance}
+h2{font-family:var(--f-display);font-size:clamp(34px,4.6vw,58px);line-height:1.08;letter-spacing:-.005em}
+h3{font-family:var(--f-display);font-size:clamp(24px,2.4vw,30px);line-height:1.15;font-weight:400}
+h4{font-family:var(--f-ui);font-size:13px;font-weight:500;letter-spacing:.28em;text-transform:uppercase}
+p{margin:0}
+em{font-style:italic}
+.eyebrow{font-size:12px;font-weight:500;letter-spacing:.38em;text-transform:uppercase;color:var(--sun)}
+.dark .eyebrow{color:var(--sand)}
+.lead{font-size:clamp(18px,1.6vw,20px);color:var(--muted)}
+.dark .lead{color:var(--on-dark-muted)}
+section{padding-block:clamp(80px,11vw,144px)}
+.stack{display:flex;flex-direction:column;gap:20px}
+.dark{background:var(--lagoon);color:var(--on-dark)}
+.paper{background:var(--paper)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 28px;border:1px solid currentColor;background:transparent;font-size:12px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn.solid{background:var(--sun);border-color:var(--sun);color:#FFFFFF}
+.btn.solid:hover{background:#9F5331;border-color:#9F5331}
+.btn.ghost:hover{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.dark .btn.ghost:hover,.hero .btn.ghost:hover{background:var(--on-dark);color:var(--lagoon);border-color:var(--on-dark)}
+.link{font-size:12px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px;align-self:flex-start}
+
+.ph{background-color:#3E6A60;background-image:var(--img),var(--ph-1);background-size:cover;background-position:center;position:relative;overflow:hidden;max-width:100%}
+.ph.warm{background-image:var(--img),var(--ph-2)}
+.ph.ember{background-image:var(--img),var(--ph-3)}
+
+/* ===== header ===== */
+.site-head{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;color:#FFFFFF;transition:background .35s,color .35s,box-shadow .35s}
+.site-head.solid{background:var(--ivory);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.head-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding-block:18px}
+.head-nav{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.head-nav a{font-size:12px;font-weight:400;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;opacity:.92}
+.head-nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+.logo{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none}
+.logo svg.rm{display:block;width:58px;height:49px}
+.logo .word{font-weight:200;font-size:24px;letter-spacing:.52em;margin-right:-.52em;line-height:1}
+.logo .sub{font-weight:400;font-size:8.5px;letter-spacing:.55em;margin-right:-.55em}
+.head-cta{display:flex;justify-content:flex-end;align-items:center;gap:12px}
+.menu-btn{display:none;width:48px;height:48px;border:0;background:transparent;cursor:pointer;align-items:center;justify-content:center}
+.menu-btn span{display:block;width:24px;height:1px;background:currentColor;box-shadow:0 -7px 0 currentColor,0 7px 0 currentColor}
+@media (max-width:1020px){
+  .head-nav{display:none}
+  .menu-btn{display:inline-flex}
+  .head-cta .btn{padding:0 16px;letter-spacing:.2em}
+}
+@media (max-width:520px){.head-cta .btn{display:none}.logo svg.rm{width:46px;height:39px}.logo .word{font-size:19px}}
+.drawer{position:fixed;inset:0;z-index:70;background:var(--lagoon);color:var(--on-dark);display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 24px) var(--gutter-r) calc(env(safe-area-inset-bottom,0px) + 32px) var(--gutter-l);gap:28px;overflow-y:auto}
+.drawer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.drawer ul a{font-family:var(--f-display);font-size:34px;text-decoration:none;display:block;padding-block:6px}
+.drawer .close{align-self:flex-end;width:48px;height:48px;border:1px solid var(--on-dark-muted);background:transparent;cursor:pointer;font-size:22px;line-height:1}
+
+/* ===== hero ===== */
+.hero{position:relative;min-height:clamp(620px,96vh,980px);padding:0;display:flex;align-items:flex-end;color:#FFFFFF;overflow:hidden;background:var(--lagoon)}
+.hero .ph{position:absolute;inset:0;--img:url(img/resort.jpg)}
+.hero .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,20,.45) 0%,rgba(8,20,20,.05) 30%,rgba(8,20,20,.15) 55%,rgba(8,20,20,.72) 100%)}
+@media (prefers-reduced-motion:no-preference){.hero .ph{animation:drift 26s ease-in-out infinite alternate}@keyframes drift{from{transform:scale(1.02)}to{transform:scale(1.1)}}}
+.hero-copy{position:relative;z-index:1;width:100%;padding-block:0 40px}
+.hero h1{font-family:var(--f-display);font-weight:300;font-size:clamp(52px,9vw,128px);line-height:.95;letter-spacing:-.01em}
+.hero h1 em{font-weight:300}
+.hero .tag{margin-top:22px;max-width:540px;font-size:clamp(17px,1.5vw,20px);color:#F1ECE3}
+.hero .eyebrow{color:#EADFCB;margin-bottom:22px}
+
+/* booking bar */
+.bookbar{position:relative;z-index:2;margin-top:44px;background:rgba(247,243,236,.97);color:var(--ink);display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;align-items:stretch}
+.bookbar label{display:flex;flex-direction:column;gap:4px;padding:16px 22px;border-right:1px solid var(--line);min-width:0}
+.bookbar label span{font-size:11px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.bookbar input,.bookbar select{border:0;background:transparent;padding:0;font-size:16px;font-weight:400;width:100%;min-width:0}
+.bookbar .btn{min-height:auto;border-radius:0}
+@media (max-width:900px){.bookbar{grid-template-columns:repeat(2,minmax(0,1fr))}.bookbar label{border-bottom:1px solid var(--line)}.bookbar .btn{grid-column:1 / -1;min-height:56px}}
+
+/* ===== intro ===== */
+.intro .quote{font-family:var(--f-display);font-size:clamp(28px,3.4vw,44px);line-height:1.25;font-weight:300}
+.horizon{display:block;margin:0 auto 34px;width:150px;height:128px;color:var(--sun)}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:64px;border-top:1px solid var(--line);padding-top:36px}
+.facts div{display:flex;flex-direction:column;gap:4px;min-width:0}
+.facts strong{font-family:var(--f-display);font-weight:300;font-size:44px;line-height:1;font-variant-numeric:lining-nums}
+.facts span{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:720px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ===== stays ===== */
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:52px}
+.sec-head > div{max-width:640px;min-width:0}
+.stays{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.stay{display:flex;flex-direction:column;background:var(--paper);min-width:0}
+.stay .car{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--lagoon)}
+.car-track{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-x:contain}
+.car-track::-webkit-scrollbar{display:none}
+.car-track .ph{flex:0 0 100%;height:100%;scroll-snap-align:start}
+@media (prefers-reduced-motion:reduce){.car-track{scroll-behavior:auto}}
+.stay .car .badge{position:absolute;left:16px;top:16px;z-index:2;background:rgba(247,243,236,.94);color:var(--ink);font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;padding:8px 12px}
+.car-btn{position:absolute;top:50%;z-index:2;width:44px;height:44px;margin-top:-22px;border:0;border-radius:50%;background:rgba(247,243,236,.92);color:var(--ink);font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:.9;transition:opacity .2s}
+.car-btn:hover{opacity:1}
+.car-btn:disabled{opacity:0;pointer-events:none}
+.car-btn.prev{left:12px}.car-btn.next{right:12px}
+.car-foot{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:28px 16px 14px;background:linear-gradient(180deg,rgba(8,20,20,0),rgba(8,20,20,.55));color:#FFFFFF;pointer-events:none}
+.car-cap{font-size:12px;letter-spacing:.18em;text-transform:uppercase;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.car-dots{display:flex;gap:2px;pointer-events:auto}
+.car-dots button{width:22px;height:22px;border:0;background:transparent;padding:0;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.car-dots button::before{content:"";width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);transition:background .2s,transform .2s}
+.car-dots button[aria-current="true"]::before{background:#FFFFFF;transform:scale(1.25)}
+.stay-body{padding:28px 26px 30px;display:flex;flex-direction:column;gap:14px;flex:1}
+.stay-meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--muted);letter-spacing:.06em}
+.stay ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:15px;color:var(--muted)}
+.stay ul li::before{content:"";display:inline-block;width:14px;height:1px;background:var(--sun);vertical-align:middle;margin-right:10px}
+.stay-foot{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.price{font-family:var(--f-display);font-size:26px}
+.price small{font-family:var(--f-ui);font-size:12px;color:var(--muted);letter-spacing:.08em}
+@media (max-width:980px){.stays{grid-template-columns:minmax(0,1fr)}.stay{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}.stay .car{aspect-ratio:auto;min-height:380px}}
+@media (max-width:640px){.stay{display:flex}.stay .car{aspect-ratio:4/3;min-height:0}}
+.villas-note{margin-top:28px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:15px}
+
+/* ===== programs ===== */
+.tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid rgba(244,239,230,.2);margin-bottom:48px}
+.tab{background:transparent;border:0;border-bottom:2px solid transparent;color:var(--on-dark-muted);padding:16px 22px;min-height:48px;cursor:pointer;font-size:13px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--on-dark);border-bottom-color:var(--sand)}
+.program{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:center}
+.program .ph{aspect-ratio:5/4}
+.program dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:8px 0 0;padding:22px 0;border-block:1px solid rgba(244,239,230,.18)}
+.program dt{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--on-dark-muted)}
+.program dd{margin:4px 0 0;font-family:var(--f-display);font-size:22px}
+.program ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px;font-size:15px;color:var(--on-dark-muted)}
+.program ul li::before{content:"";display:inline-block;width:14px;height:1px;background:var(--sand);vertical-align:middle;margin-right:10px}
+@media (max-width:900px){.program{grid-template-columns:minmax(0,1fr)}.program ul{grid-template-columns:minmax(0,1fr)}}
+
+/* ===== dining ===== */
+.dining{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px;align-items:start}
+.dining .a{grid-column:1 / span 7}
+.dining .a .ph{aspect-ratio:4/3}
+.dining .b{grid-column:9 / span 4;display:flex;flex-direction:column;gap:22px;padding-top:40px}
+.dining .c{grid-column:1 / span 4;margin-top:-90px;position:relative}
+.dining .c .ph{aspect-ratio:3/4;border:10px solid var(--ivory)}
+.dining .d{grid-column:6 / span 7;margin-top:40px}
+.dining .d .ph{aspect-ratio:16/9}
+.cap{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);margin-top:12px}
+@media (max-width:900px){.dining{grid-template-columns:minmax(0,1fr)}.dining .a,.dining .b,.dining .c,.dining .d{grid-column:1 / -1;margin-top:0;padding-top:0}.dining .c .ph{border:0;aspect-ratio:4/3}}
+.tables{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:80px;border-top:1px solid var(--line);padding-top:40px}
+.tables > div{display:flex;flex-direction:column;gap:10px;min-width:0}
+.tables p{font-size:15px;color:var(--muted)}
+@media (max-width:900px){.tables{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.tables{grid-template-columns:minmax(0,1fr)}}
+
+/* ===== wellness ===== */
+.full{position:relative;padding:0;min-height:clamp(520px,80vh,820px);display:flex;align-items:center;color:#FFFFFF;background:var(--lagoon)}
+.full .ph{position:absolute;inset:0}
+.full .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,20,20,.78) 0%,rgba(8,20,20,.35) 55%,rgba(8,20,20,.05) 100%)}
+.full .inner{position:relative;z-index:1;width:100%;padding-block:96px}
+.full .inner .stack{max-width:520px}
+.full .lead{color:#E3DED4}
+.well-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;background:var(--line)}
+.well-grid > div{background:var(--ivory);padding:34px 28px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.well-grid svg{width:34px;height:34px;color:var(--sun)}
+.well-grid p{font-size:15px;color:var(--muted)}
+@media (max-width:900px){.well-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.well-grid{grid-template-columns:minmax(0,1fr)}}
+
+.daygrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(32px,6vw,88px);align-items:start}
+.daygrid .ph{aspect-ratio:4/5;position:sticky;top:120px}
+.day{list-style:none;margin:28px 0 0;padding:0}
+.day li{display:grid;grid-template-columns:84px minmax(0,1fr);gap:22px;padding-block:18px;border-top:1px solid var(--line)}
+.day li:last-child{border-bottom:1px solid var(--line)}
+.day time{font-variant-numeric:tabular-nums;font-weight:500;letter-spacing:.1em;color:var(--sun)}
+.day b{display:block;font-weight:400}
+.day span{font-size:15px;color:var(--muted)}
+@media (max-width:860px){.daygrid{grid-template-columns:minmax(0,1fr)}.daygrid .ph{position:static;aspect-ratio:4/3}}
+
+/* ===== experiences ===== */
+.exp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid rgba(244,239,230,.18)}
+.exp > div{padding:34px 28px 38px 0;border-bottom:1px solid rgba(244,239,230,.18);display:flex;flex-direction:column;gap:10px;min-width:0}
+.exp > div:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid rgba(244,239,230,.18)}
+.exp .n{font-size:12px;letter-spacing:.3em;color:var(--sand);text-transform:uppercase}
+.exp p{font-size:15px;color:var(--on-dark-muted)}
+@media (max-width:860px){.exp{grid-template-columns:minmax(0,1fr)}.exp > div,.exp > div:not(:nth-child(3n+1)){padding-left:0;border-left:0}}
+
+/* ===== calendar ===== */
+.cal-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.chip{border:1px solid var(--line);background:var(--paper);padding:0 18px;min-height:44px;cursor:pointer;font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.events{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.event{display:grid;grid-template-columns:150px minmax(0,1fr) 150px auto;gap:24px;align-items:center;padding-block:24px;border-bottom:1px solid var(--line)}
+.event .when{font-family:var(--f-display);font-size:24px;line-height:1.1}
+.event .when small{display:block;font-family:var(--f-ui);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.event .what{display:flex;flex-direction:column;gap:4px;min-width:0}
+.event .what b{font-weight:400;font-size:19px}
+.event .what span{font-size:15px;color:var(--muted)}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.status.open{color:#2F6B4F}
+.status.few{color:#A0581F}
+.status.wait{color:var(--muted)}
+.event .btn{min-height:44px;padding:0 20px}
+@media (max-width:860px){.event{grid-template-columns:minmax(0,1fr) auto;gap:12px 20px}.event .when{grid-column:1 / -1}.event .what{grid-column:1 / -1}}
+.note{font-size:14px;color:var(--muted);margin-top:20px}
+
+/* ===== booking ===== */
+.booking{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:start}
+.panel{background:var(--paper);padding:clamp(22px,3vw,40px);display:flex;flex-direction:column;gap:26px;min-width:0}
+.field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.field > span,.legend{font-size:11px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select,.field textarea{border:1px solid var(--line);background:var(--ivory);padding:12px 14px;min-height:48px;width:100%;min-width:0}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:520px){.row2{grid-template-columns:minmax(0,1fr)}}
+.opts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.opt{border:1px solid var(--line);background:var(--ivory);padding:14px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:2px;min-height:48px;min-width:0}
+.opt b{font-weight:400}
+.opt small{color:var(--muted);font-size:13px}
+.opt[aria-pressed="true"]{border-color:var(--ink);background:var(--paper);box-shadow:inset 0 0 0 1px var(--ink)}
+@media (max-width:640px){.opts{grid-template-columns:minmax(0,1fr)}}
+.opts.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:760px){.opts.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.month-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.month-head b{font-family:var(--f-display);font-size:24px;font-weight:400}
+.nav-btn{width:44px;height:44px;border:1px solid var(--line);background:var(--ivory);cursor:pointer;font-size:18px}
+.nav-btn:disabled{opacity:.35;cursor:default}
+.grid-cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.grid-cal .dow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;padding-block:6px}
+.day-btn{aspect-ratio:1/1;border:0;background:transparent;cursor:pointer;font-variant-numeric:tabular-nums;font-size:15px;min-height:40px;position:relative}
+.day-btn:hover:not(:disabled){background:var(--ivory)}
+.day-btn:disabled{color:#BDB5A8;cursor:default;text-decoration:line-through}
+.day-btn.in{background:#EFE7DA}
+.day-btn.edge{background:var(--ink);color:var(--ivory)}
+.summary{position:sticky;top:110px;background:var(--lagoon);color:var(--on-dark);padding:clamp(22px,3vw,36px);display:flex;flex-direction:column;gap:18px;min-width:0}
+.summary h3{color:var(--on-dark)}
+.sum-lines{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none;border-block:1px solid rgba(244,239,230,.18);padding-block:18px}
+.sum-lines li{display:flex;justify-content:space-between;gap:16px;font-size:15px}
+.sum-lines li span:first-child{color:var(--on-dark-muted)}
+.sum-lines li span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.total{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.total b{font-family:var(--f-display);font-size:38px;font-weight:300;font-variant-numeric:tabular-nums}
+.incl{font-size:13px;color:var(--on-dark-muted)}
+.confirm{border:1px solid var(--sand);padding:18px;font-size:15px;display:flex;flex-direction:column;gap:6px}
+.hint{font-size:13px;color:#F0C9A8}
+@media (max-width:980px){.booking{grid-template-columns:minmax(0,1fr)}.summary{position:static}}
+
+/* ===== gallery ===== */
+.gallery{display:grid;grid-auto-flow:dense;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,18vw,240px);gap:10px}
+.gallery .ph{height:100%}
+.gallery .g1{grid-column:span 2;grid-row:span 2}
+.gallery .g4{grid-row:span 2}
+.gallery .gw{grid-column:span 2}
+@media (max-width:720px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery .g4{grid-row:span 1}}
+
+/* ===== story ===== */
+.story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.story .ph{aspect-ratio:1/1}
+.hosts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:10px}
+.hosts > div{border-top:1px solid var(--line);padding-top:16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.hosts p{font-size:15px;color:var(--muted)}
+@media (max-width:860px){.story{grid-template-columns:minmax(0,1fr)}.story .ph{aspect-ratio:4/3}}
+@media (max-width:480px){.hosts{grid-template-columns:minmax(0,1fr)}}
+
+/* ===== eco ===== */
+.eco{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;margin-top:56px}
+.eco > div{display:flex;flex-direction:column;gap:10px;min-width:0}
+.eco strong{font-family:var(--f-display);font-size:46px;font-weight:300;line-height:1;color:var(--sand)}
+.eco p{font-size:15px;color:var(--on-dark-muted)}
+@media (max-width:900px){.eco{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.eco{grid-template-columns:minmax(0,1fr)}}
+
+/* ===== faq ===== */
+.faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:clamp(32px,6vw,96px)}
+.faq details{border-top:1px solid var(--line);padding-block:4px}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;padding-block:20px;font-family:var(--f-display);font-size:23px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--f-ui);font-weight:200;font-size:28px;line-height:1}
+.faq details[open] summary::after{content:"\2013"}
+.faq details p{padding-bottom:22px;color:var(--muted);max-width:620px}
+@media (max-width:860px){.faq{grid-template-columns:minmax(0,1fr)}}
+
+/* ===== newsletter + footer ===== */
+.closing{position:relative;padding:0;min-height:520px;display:flex;align-items:center;justify-content:center;text-align:center;color:#FFFFFF;background:var(--lagoon)}
+.closing .ph{position:absolute;inset:0;--img:url(img/beachclub.jpg)}
+.closing .ph::after{content:"";position:absolute;inset:0;background:rgba(8,20,20,.5)}
+.closing .inner{position:relative;z-index:1;padding-block:96px;display:flex;flex-direction:column;align-items:center;gap:22px}
+.news{display:flex;gap:0;width:min(520px,100%);margin-top:8px}
+.news input{flex:1;min-width:0;min-height:52px;border:1px solid rgba(255,255,255,.7);background:rgba(255,255,255,.08);color:#FFFFFF;padding:0 18px}
+.news input::placeholder{color:#E6E0D6}
+.news .btn{border-radius:0}
+@media (max-width:480px){.news{flex-direction:column;gap:10px}}
+footer{background:var(--lagoon);color:var(--on-dark-muted);padding-block:72px 40px;font-size:15px}
+.foot{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:40px}
+.foot h4{color:var(--on-dark);margin-bottom:14px;font-size:12px}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--on-dark)}
+.foot .logo{align-items:flex-start;color:var(--on-dark)}
+.foot .logo .word{margin-right:0}
+.legal{margin-top:56px;padding-top:24px;border-top:1px solid rgba(244,239,230,.15);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px}
+@media (max-width:860px){.foot{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.foot{grid-template-columns:minmax(0,1fr)}}
+
+/* ===== promise ===== */
+.promise-head{display:flex;flex-direction:column;gap:20px;max-width:820px;margin-bottom:56px}
+.promise-head h2 em{color:var(--sand)}
+.promise{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.pillar{position:relative;min-height:clamp(420px,46vw,560px);display:flex;align-items:flex-end;overflow:hidden;color:#FFFFFF;min-width:0}
+.pillar .ph{position:absolute;inset:0;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.pillar .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,20,0) 30%,rgba(8,20,20,.82) 100%)}
+@media (prefers-reduced-motion:no-preference){.pillar:hover .ph{transform:scale(1.05)}}
+.pillar .txt{position:relative;z-index:1;padding:26px 24px 28px;display:flex;flex-direction:column;gap:10px}
+.pillar .n{font-size:11px;font-weight:500;letter-spacing:.34em;text-transform:uppercase;color:var(--sand)}
+.pillar h3{font-size:clamp(26px,2.4vw,32px)}
+.pillar blockquote{margin:0;font-family:var(--f-display);font-style:italic;font-size:clamp(19px,1.6vw,22px);line-height:1.3;color:#F4EFE6}
+.pillar p{font-size:14px;line-height:1.55;color:#D5DBD3}
+@media (max-width:1020px){.promise{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.promise{grid-template-columns:minmax(0,1fr)}.pillar{min-height:440px}}
+.nots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:72px;padding-top:40px;border-top:1px solid rgba(244,239,230,.18)}
+.nots > div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.nots s{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--on-dark-muted);text-decoration-color:var(--sun);text-decoration-thickness:1px}
+.nots b{font-family:var(--f-display);font-weight:400;font-size:24px;line-height:1.2;color:var(--on-dark)}
+@media (max-width:900px){.nots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.nots{grid-template-columns:minmax(0,1fr)}}
+
+/* ===== quote band ===== */
+.qband{padding-block:clamp(72px,9vw,120px);text-align:center}
+.qband blockquote{margin:0 auto;max-width:900px;font-family:var(--f-display);font-weight:300;font-style:italic;font-size:clamp(32px,4.4vw,58px);line-height:1.12}
+.qband .who{margin-top:24px;font-size:12px;font-weight:500;letter-spacing:.38em;text-transform:uppercase;color:var(--sun)}
+.qband svg{display:block;margin:0 auto 26px;width:64px;height:54px;color:var(--sun)}
+
+/* ===== mind ===== */
+.mind{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:center}
+.mind .ph{aspect-ratio:16/10}
+.mind ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px;font-size:15px;color:var(--on-dark-muted)}
+.mind ul li::before{content:"";display:inline-block;width:14px;height:1px;background:var(--sand);vertical-align:middle;margin-right:10px}
+.mind blockquote{margin:0;padding-left:20px;border-left:1px solid var(--sand);font-family:var(--f-display);font-style:italic;font-size:clamp(22px,2vw,26px);line-height:1.3;color:var(--on-dark)}
+@media (max-width:900px){.mind{grid-template-columns:minmax(0,1fr)}.mind ul{grid-template-columns:minmax(0,1fr)}}
+.qband.photo{position:relative;color:#FFFFFF;background:var(--lagoon);overflow:hidden;min-height:clamp(440px,62vh,640px);display:flex;align-items:center;justify-content:center}
+.qband.photo .ph{position:absolute;inset:0}
+.qband.photo .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,20,.15) 0%,rgba(8,20,20,.55) 100%)}
+.qband.photo .wrap{position:relative;z-index:1}
+.qband.photo .who{color:#EADFCB}
+
+/* ===== roots quote with growing logo ===== */
+.roots{text-align:center;padding-block:clamp(88px,11vw,150px)}
+.roots .grow{display:block;margin:0 auto 40px;width:clamp(200px,26vw,300px);height:auto;color:var(--sun);cursor:pointer;overflow:visible}
+.roots .grow path{fill:none;stroke:currentColor;stroke-linecap:round}
+.roots .grow circle{fill:currentColor;transform-box:fill-box;transform-origin:center}
+.roots blockquote{margin:0 auto;max-width:860px;font-family:var(--f-display);font-weight:300;font-size:clamp(30px,4vw,52px);line-height:1.15}
+.roots blockquote em{color:var(--sun)}
+.roots .who{margin-top:26px;font-size:12px;font-weight:500;letter-spacing:.38em;text-transform:uppercase;color:var(--muted)}
+.roots .sub{margin:22px auto 0;max-width:560px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){
+  .grow.armed path{stroke-dasharray:1 2;stroke-dashoffset:1;opacity:0}
+  .grow.armed circle{opacity:0;transform:scale(0)}
+  .grow.play path{animation:draw var(--d,1s) cubic-bezier(.45,.05,.3,1) var(--t,0s) forwards}
+  .grow.play circle{animation:bud .5s cubic-bezier(.3,1.6,.5,1) var(--t,0s) forwards}
+  @keyframes draw{from{opacity:1}to{stroke-dashoffset:0;opacity:1}}
+  @keyframes bud{to{opacity:1;transform:scale(1)}}
+}
+
+/* reveal: visible at rest; JS adds a gentle rise when sections scroll in */
+@media (prefers-reduced-motion:no-preference){
+  .rise{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+  .rise.pre{transform:translateY(28px)}
+}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="rootmark" viewBox="0 0 200 170"><g fill="none" stroke="currentColor" stroke-linecap="round"><path vector-effect="non-scaling-stroke" stroke-width="1.2" d="M10 40 H86 M114 40 H190 M86 40 A14 14 0 0 1 114 40"/><path vector-effect="non-scaling-stroke" stroke-width="1.5" d="M100 40 C100 80 101 120 100 160 M100 48 C80 52 60 60 38 82 M100 48 C120 52 140 60 162 82 M100 70 C84 74 70 82 56 102 M100 70 C116 74 130 82 144 102 M100 92 C88 96 78 104 70 120 M100 92 C112 96 122 104 130 120 M100 114 C92 118 86 126 82 138 M100 114 C108 118 114 126 118 138"/><path vector-effect="non-scaling-stroke" stroke-width="1" d="M62 60 C58 68 56 76 54 86 M138 60 C142 68 144 76 146 86 M48 72 C42 74 36 78 30 80 M152 72 C158 74 164 78 170 80 M76 78 C74 86 74 92 72 100 M124 78 C126 86 126 92 128 100 M84 100 C82 106 82 110 80 116 M116 100 C118 106 118 110 120 116 M100 140 C96 146 94 150 92 156 M100 140 C104 146 106 150 108 156"/></g><g fill="currentColor"><circle cx="38" cy="82" r="2.6"/><circle cx="162" cy="82" r="2.6"/><circle cx="56" cy="102" r="2.4"/><circle cx="144" cy="102" r="2.4"/><circle cx="70" cy="120" r="2.2"/><circle cx="130" cy="120" r="2.2"/><circle cx="82" cy="138" r="2"/><circle cx="118" cy="138" r="2"/><circle cx="100" cy="160" r="2.6"/></g></symbol></defs></svg>
+
+<header class="site-head" id="head">
+  <div class="wrap head-row">
+    <ul class="head-nav" aria-label="Main">
+      <li><a href="#stay">Stay</a></li>
+      <li><a href="#programs">Retreats</a></li>
+      <li><a href="#dining">Dining</a></li>
+      <li><a href="#wellness">Wellness</a></li>
+      <li><a href="#calendar">Calendar</a></li>
+    </ul>
+    <a class="logo" href="#top" aria-label="Rooted Retreat Thailand, back to top">
+      <svg class="rm" aria-hidden="true"><use href="#rootmark"/></svg>
+      <span class="word">ROOTED</span>
+      <span class="sub">RETREAT · THAILAND</span>
+    </a>
+    <div class="head-cta">
+      <a class="btn solid" href="#book">Book your stay</a>
+      <button class="menu-btn" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <button class="close" type="button" id="closeBtn" aria-label="Close menu">×</button>
+  <ul>
+    <li><a href="#promise">Our promise</a></li>
+    <li><a href="#stay">Stay</a></li>
+    <li><a href="#programs">Retreats</a></li>
+    <li><a href="#dining">Dining</a></li>
+    <li><a href="#wellness">Wellness</a></li>
+    <li><a href="#mind">Calm under pressure</a></li>
+    <li><a href="#experiences">Experiences</a></li>
+    <li><a href="#calendar">Calendar</a></li>
+    <li><a href="#story">Our story</a></li>
+    <li><a href="#book">Book your stay</a></li>
+  </ul>
+</div>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" aria-label="Welcome">
+    <div class="ph" role="img" aria-label="Aerial view of Rooted: thatched villas among palms on a white beach"></div>
+    <div class="wrap hero-copy">
+      <p class="eyebrow">Eco luxury retreat · Thailand</p>
+      <h1>Grow <em>from rest</em></h1>
+      <p class="tag">Clean food. Clean air. Clean ocean. Clean future. Thirty-six guests on one beach, fed by our own garden three times a day.</p>
+      <form class="bookbar" id="quickBook" aria-label="Check availability">
+        <label><span>Arrival</span><input type="date" id="qbIn" required></label>
+        <label><span>Nights</span><select id="qbNights"><option>5</option><option selected>7</option><option>10</option><option>14</option></select></label>
+        <label><span>Guests</span><select id="qbGuests"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></label>
+        <label><span>Retreat</span><select id="qbProg"><option value="reset">Reset</option><option value="strong">Strong</option><option value="growth">Growth</option><option value="family">Family</option></select></label>
+        <button class="btn solid" type="submit">Check availability</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="wrap">
+      <div class="narrow center rise">
+        <svg class="horizon" viewBox="0 0 200 170" aria-hidden="true"><use href="#rootmark"/></svg>
+        <p class="quote">Most resorts help you escape your life for a week. Rooted helps you come back to it: stronger, calmer, cleaner, and knowing how to stay that way.</p>
+        <p class="lead" style="margin-top:22px">A barefoot island retreat, hosted by two families.</p>
+      </div>
+      <div class="facts rise">
+        <div><strong>36</strong><span>Guests at most</span></div>
+        <div><strong>12</strong><span>Pool residences</span></div>
+        <div><strong>3×</strong><span>Garden-to-table daily</span></div>
+        <div><strong>365</strong><span>Days open a year</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOTS QUOTE -->
+  <section class="roots paper" aria-labelledby="roots-q">
+    <div class="wrap">
+      <svg class="grow" id="growMark" viewBox="0 0 200 170" role="img" aria-label="The Rooted mark: a horizon with a rising sun, and roots growing beneath it">
+          <path pathLength="1" stroke-width=".85" style="--t:0s;--d:.9s" d="M100 40 H190"/>
+          <path pathLength="1" stroke-width=".85" style="--t:0s;--d:.9s" d="M100 40 H10"/>
+          <path pathLength="1" stroke-width=".85" style="--t:.5s;--d:.9s" d="M86 40 A14 14 0 0 1 114 40"/>
+          <path pathLength="1" stroke-width="1.1" style="--t:1.1s;--d:1.6s" d="M100 40 C100 80 101 120 100 160"/>
+          <path pathLength="1" stroke-width=".95" style="--t:1.35s;--d:1.1s" d="M100 48 C80 52 60 60 38 82"/>
+          <path pathLength="1" stroke-width=".95" style="--t:1.35s;--d:1.1s" d="M100 48 C120 52 140 60 162 82"/>
+          <path pathLength="1" stroke-width=".95" style="--t:1.6s;--d:1s" d="M100 70 C84 74 70 82 56 102"/>
+          <path pathLength="1" stroke-width=".95" style="--t:1.6s;--d:1s" d="M100 70 C116 74 130 82 144 102"/>
+          <path pathLength="1" stroke-width=".95" style="--t:1.85s;--d:.9s" d="M100 92 C88 96 78 104 70 120"/>
+          <path pathLength="1" stroke-width=".95" style="--t:1.85s;--d:.9s" d="M100 92 C112 96 122 104 130 120"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.1s;--d:.8s" d="M100 114 C92 118 86 126 82 138"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.1s;--d:.8s" d="M100 114 C108 118 114 126 118 138"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.2s;--d:.7s" d="M62 60 C58 68 56 76 54 86"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.2s;--d:.7s" d="M138 60 C142 68 144 76 146 86"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.35s;--d:.6s" d="M48 72 C42 74 36 78 30 80"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.35s;--d:.6s" d="M152 72 C158 74 164 78 170 80"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.45s;--d:.6s" d="M76 78 C74 86 74 92 72 100"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.45s;--d:.6s" d="M124 78 C126 86 126 92 128 100"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.6s;--d:.5s" d="M84 100 C82 106 82 110 80 116"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.6s;--d:.5s" d="M116 100 C118 106 118 110 120 116"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.7s;--d:.5s" d="M100 140 C96 146 94 150 92 156"/>
+          <path pathLength="1" stroke-width=".95" style="--t:2.7s;--d:.5s" d="M100 140 C104 146 106 150 108 156"/>
+          <circle style="--t:2.3s" cx="38" cy="82" r="2.6"/><circle style="--t:2.3s" cx="162" cy="82" r="2.6"/>
+          <circle style="--t:2.5s" cx="56" cy="102" r="2.4"/><circle style="--t:2.5s" cx="144" cy="102" r="2.4"/>
+          <circle style="--t:2.65s" cx="70" cy="120" r="2.2"/><circle style="--t:2.65s" cx="130" cy="120" r="2.2"/>
+          <circle style="--t:2.8s" cx="82" cy="138" r="2"/><circle style="--t:2.8s" cx="118" cy="138" r="2"/>
+          <circle style="--t:2.9s" cx="100" cy="160" r="2.6"/>
+        </svg>
+      <blockquote id="roots-q">&ldquo;If the roots aren&rsquo;t healthy, a plant can never grow. <em>So we start with yours.</em>&rdquo;</blockquote>
+      <p class="who">Jaime · Health coach at Rooted</p>
+      <p class="sub">Sleep, food, movement and a calm mind first. Everything else grows from there.</p>
+    </div>
+  </section>
+
+  <!-- PROMISE -->
+  <section id="promise" class="dark" aria-labelledby="promise-h">
+    <div class="wrap">
+      <div class="promise-head rise">
+        <p class="eyebrow">The Rooted promise</p>
+        <h2 id="promise-h">Clean food. Clean air. <em>Clean ocean. Clean future.</em></h2>
+        <p class="lead">Four promises we keep every day, so that what is good for you is also good for the island.</p>
+      </div>
+      <div class="promise">
+        <article class="pillar rise">
+          <div class="ph warm" style="--img:url(img/food.jpg)" role="img" aria-label="Chef's hands holding a basket of herbs, chilies and eggs fresh from the garden"></div>
+          <div class="txt"><span class="n">01 · Clean food</span><blockquote>&ldquo;If it didn&rsquo;t grow this morning, it isn&rsquo;t on your plate.&rdquo;</blockquote><p>From our own garden, our own hens and the fishermen next door. Nothing processed, nothing flown in.</p></div>
+        </article>
+        <article class="pillar rise">
+          <div class="ph" style="--img:url(img/air.jpg);background-position:30% center" role="img" aria-label="Guest breathing in on a teak deck above the misty rainforest at sunrise"></div>
+          <div class="txt"><span class="n">02 · Clean air</span><blockquote>&ldquo;Breathe the way the jungle does.&rdquo;</blockquote><p>Car-free grounds, sea breeze instead of noise, and breathwork in the forest at first light.</p></div>
+        </article>
+        <article class="pillar rise">
+          <div class="ph" style="--img:url(img/ocean.jpg)" role="img" aria-label="Crystal-clear sea over a living coral reef in front of a white beach"></div>
+          <div class="txt"><span class="n">03 · Clean ocean</span><blockquote>&ldquo;We leave the reef better than we found it.&rdquo;</blockquote><p>Zero single-use plastic, reef-safe sunscreen only, and a reef and beach clean with our guests every week.</p></div>
+        </article>
+        <article class="pillar rise">
+          <div class="ph warm" style="--img:url(img/future.jpg);background-position:70% center" role="img" aria-label="Children planting a mangrove sapling on the beach in front of the retreat"></div>
+          <div class="txt"><span class="n">04 · Clean future</span><blockquote>&ldquo;Rest well today. Leave a better tomorrow.&rdquo;</blockquote><p>Run on sun and rain. One mangrove planted for every stay, by the children who will inherit it.</p></div>
+        </article>
+      </div>
+      <div class="nots rise" aria-label="What Rooted is not">
+        <div><s>Not a hotel with staff</s><b>A home, hosted by two families.</b></div>
+        <div><s>Not a diet</s><b>Food that grew this morning.</b></div>
+        <div><s>Not an escape</s><b>A return to yourself.</b></div>
+        <div><s>Not a souvenir</s><b>Habits you take home.</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAY -->
+  <section id="stay" class="paper">
+    <div class="wrap">
+      <div class="sec-head rise">
+        <div class="stack"><p class="eyebrow">Stay</p><h2>Twelve residences, <em>each with its own pool</em></h2></div>
+        <p class="lead" style="max-width:420px">Teak, bamboo and natural stone, cooled by sea breeze. Every residence has a plunge pool, an outdoor rain shower and a daybed on the deck.</p>
+      </div>
+      <div class="stays">
+        <article class="stay rise">
+          <div class="car" data-car>
+            <div class="car-track" tabindex="0" role="group" aria-label="Garden Pool Suite photos, use arrow keys to browse">
+              <div class="ph warm" style="--img:url(img/suite-1.jpg)" role="img" aria-label="Garden Pool Suite bedroom with linen bed, open to the deck and pool" data-cap="Bedroom"></div>
+              <div class="ph warm" style="--img:url(img/suite-2.jpg)" role="img" aria-label="Private stone plunge pool on a teak deck in the tropical garden" data-cap="Private plunge pool"></div>
+              <div class="ph warm" style="--img:url(img/suite-3.jpg)" role="img" aria-label="Stone bathtub and rain shower open to a private garden" data-cap="Garden bathroom"></div>
+              <div class="ph warm" style="--img:url(img/suite-4.jpg)" role="img" aria-label="Round daybed under a thatched roof with coconut and herbal tea" data-cap="Daybed on the deck"></div>
+            </div>
+            <span class="badge">6 suites</span>
+            <button class="car-btn prev" type="button" aria-label="Previous photo">&lsaquo;</button>
+            <button class="car-btn next" type="button" aria-label="Next photo">&rsaquo;</button>
+            <div class="car-foot"><span class="car-cap" aria-live="polite"></span><div class="car-dots"></div></div>
+          </div>
+          <div class="stay-body">
+            <h3>Garden Pool Suite</h3>
+            <div class="stay-meta"><span>2 guests</span><span>75 m²</span><span>Garden view</span></div>
+            <ul><li>King bed under a timber ceiling</li><li>Private plunge pool and deck</li><li>Steps from the herb garden</li></ul>
+            <div class="stay-foot"><span class="price">€680 <small>per night, 2 guests</small></span><a class="link" href="#book" data-stay="suite">Reserve</a></div>
+          </div>
+        </article>
+        <article class="stay rise">
+          <div class="car" data-car>
+            <div class="car-track" tabindex="0" role="group" aria-label="Ocean Pool Villa photos, use arrow keys to browse">
+              <div class="ph warm" style="--img:url(img/ocean-1.jpg)" role="img" aria-label="Infinity plunge pool on a teak deck facing the bay at sunset" data-cap="Infinity pool"></div>
+              <div class="ph warm" style="--img:url(img/ocean-2.jpg)" role="img" aria-label="Master bedroom under a timber ceiling, open to the sea at sunrise" data-cap="Sunrise bedroom"></div>
+              <div class="ph warm" style="--img:url(img/ocean-3.jpg)" role="img" aria-label="Open-plan living room with linen sofas opening onto the sea" data-cap="Living room"></div>
+              <div class="ph warm" style="--img:url(img/ocean-4.jpg)" role="img" aria-label="Lantern-lit sandy path leading from the villa to a secluded beach" data-cap="Private path to the beach"></div>
+            </div>
+            <span class="badge">3 villas</span>
+            <button class="car-btn prev" type="button" aria-label="Previous photo">&lsaquo;</button>
+            <button class="car-btn next" type="button" aria-label="Next photo">&rsaquo;</button>
+            <div class="car-foot"><span class="car-cap" aria-live="polite"></span><div class="car-dots"></div></div>
+          </div>
+          <div class="stay-body">
+            <h3>Ocean Pool Villa</h3>
+            <div class="stay-meta"><span>2 to 4 guests</span><span>120 m²</span><span>Sea view</span></div>
+            <ul><li>Two bedrooms, sunrise over the water</li><li>Infinity plunge pool</li><li>Private path to the beach</li></ul>
+            <div class="stay-foot"><span class="price">€1,280 <small>per night, 2 guests</small></span><a class="link" href="#book" data-stay="villa">Reserve</a></div>
+          </div>
+        </article>
+        <article class="stay rise">
+          <div class="car" data-car>
+            <div class="car-track" tabindex="0" role="group" aria-label="Family Beach House photos, use arrow keys to browse">
+              <div class="ph warm" style="--img:url(img/family-1.jpg)" role="img" aria-label="Family Beach House on the sand with a private pool deck" data-cap="On the sand"></div>
+              <div class="ph warm" style="--img:url(img/family-2.jpg)" role="img" aria-label="Kids' loft with bamboo bunk beds and a reading nook" data-cap="Kids' loft"></div>
+              <div class="ph warm" style="--img:url(img/family-3.jpg)" role="img" aria-label="Open-plan living and dining area with a long teak table" data-cap="Living and dining"></div>
+              <div class="ph warm" style="--img:url(img/family-4.jpg)" role="img" aria-label="Lantern-lit beach terrace with an outdoor rain shower and hammock" data-cap="Beach terrace at dusk"></div>
+            </div>
+            <span class="badge">3 houses</span>
+            <button class="car-btn prev" type="button" aria-label="Previous photo">&lsaquo;</button>
+            <button class="car-btn next" type="button" aria-label="Next photo">&rsaquo;</button>
+            <div class="car-foot"><span class="car-cap" aria-live="polite"></span><div class="car-dots"></div></div>
+          </div>
+          <div class="stay-body">
+            <h3>Family Beach House</h3>
+            <div class="stay-meta"><span>4 guests</span><span>140 m²</span><span>Beachfront</span></div>
+            <ul><li>Two bedrooms and a kids' loft</li><li>Shaded pool deck on the sand</li><li>Daily kids' program included</li></ul>
+            <div class="stay-foot"><span class="price">€1,240 <small>per night, 4 guests</small></span><a class="link" href="#book" data-stay="family">Reserve</a></div>
+          </div>
+        </article>
+      </div>
+      <p class="villas-note rise"><b style="font-weight:500;color:var(--ink)">Every rate includes</b> full garden-to-table board · your retreat program with daily classes · a personal health and nutrition intake · airport transfers.</p>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="dark">
+    <div class="wrap">
+      <div class="sec-head rise">
+        <div class="stack"><p class="eyebrow">Retreats</p><h2>Four ways <em>to come home to yourself</em></h2></div>
+        <p class="lead" style="max-width:420px">Every stay follows a retreat with a clear start and finish, so you arrive as a guest and leave as part of a group.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Retreats">
+        <button class="tab" role="tab" id="t-reset" aria-controls="p-reset" aria-selected="true">Reset</button>
+        <button class="tab" role="tab" id="t-strong" aria-controls="p-strong" aria-selected="false" tabindex="-1">Strong</button>
+        <button class="tab" role="tab" id="t-growth" aria-controls="p-growth" aria-selected="false" tabindex="-1">Growth</button>
+        <button class="tab" role="tab" id="t-family" aria-controls="p-family" aria-selected="false" tabindex="-1">Family</button>
+      </div>
+      <div class="program" role="tabpanel" id="p-reset" aria-labelledby="t-reset">
+        <div class="ph" style="--img:url(img/yoga.jpg)" role="img" aria-label="Sunrise yoga in the beach sala"></div>
+        <div class="stack">
+          <h3 style="font-size:clamp(30px,3.2vw,42px)">Reset</h3>
+          <p class="lead">For anyone who is tired, overstimulated or simply needs to land. Sleep, breath and plant-forward food bring your system back to calm.</p>
+          <dl><div><dt>Length</dt><dd>5, 7 or 14 nights</dd></div><div><dt>Pace</dt><dd>Gentle</dd></div><div><dt>Group</dt><dd>Up to 36</dd></div></dl>
+          <ul><li>Daily sunrise yoga and meditation</li><li>Breathwork and yin sessions</li><li>Sleep and stress intake</li><li>Plant-forward garden menu</li><li>Two Thai massages</li><li>Personal plan for home</li></ul>
+          <a class="btn ghost" href="#book" data-prog="reset" style="align-self:flex-start">Book Reset</a>
+        </div>
+      </div>
+      <div class="program" role="tabpanel" id="p-strong" aria-labelledby="t-strong" hidden>
+        <div class="ph ember" style="--img:url(img/muaythai.jpg)" role="img" aria-label="Muay Thai training under a thatched roof"></div>
+        <div class="stack">
+          <h3 style="font-size:clamp(30px,3.2vw,42px)">Strong</h3>
+          <p class="lead">For athletes and anyone ready to get properly fit. Muay Thai with Thai trainers, strength and pilates, fuelled by protein-rich food from Bonnie's kitchen.</p>
+          <dl><div><dt>Length</dt><dd>7 or 14 nights</dd></div><div><dt>Pace</dt><dd>Intense</dd></div><div><dt>Group</dt><dd>Up to 24</dd></div></dl>
+          <ul><li>Two training blocks a day</li><li>Muay Thai pad work and sparring</li><li>Reformer and mat pilates</li><li>Body composition scan</li><li>Ice bath and sauna recovery</li><li>Performance nutrition plan</li></ul>
+          <a class="btn ghost" href="#book" data-prog="strong" style="align-self:flex-start">Book Strong</a>
+        </div>
+      </div>
+      <div class="program" role="tabpanel" id="p-growth" aria-labelledby="t-growth" hidden>
+        <div class="ph warm" style="--img:url(img/chefstable.jpg)" role="img" aria-label="Long table dinner on the beach at dusk"></div>
+        <div class="stack">
+          <h3 style="font-size:clamp(30px,3.2vw,42px)">Growth</h3>
+          <p class="lead">For founders, leaders and professionals. One-on-one coaching and evening talks by guest speakers in residence, with enough rest to actually think.</p>
+          <dl><div><dt>Length</dt><dd>5 or 7 nights</dd></div><div><dt>Pace</dt><dd>Balanced</dd></div><div><dt>Group</dt><dd>Up to 20</dd></div></dl>
+          <ul><li>Three private coaching sessions</li><li>Guest speaker talks each evening</li><li>Focus and leadership workshops</li><li>Morning training of your choice</li><li>Chef's table with the speaker</li><li>Follow-up call after one month</li></ul>
+          <a class="btn ghost" href="#book" data-prog="growth" style="align-self:flex-start">Book Growth</a>
+        </div>
+      </div>
+      <div class="program" role="tabpanel" id="p-family" aria-labelledby="t-family" hidden>
+        <div class="ph warm" style="--img:url(img/kookles.jpg)" role="img" aria-label="Parents and children in a cooking class"></div>
+        <div class="stack">
+          <h3 style="font-size:clamp(30px,3.2vw,42px)">Family</h3>
+          <p class="lead">For parents who want real rest without leaving the kids behind. Train and cook together in the morning, and let the children explore the garden and beach with our team in the afternoon.</p>
+          <dl><div><dt>Length</dt><dd>7 or 14 nights</dd></div><div><dt>Ages</dt><dd>4 and up</dd></div><div><dt>Group</dt><dd>Up to 36</dd></div></dl>
+          <ul><li>Daily kids' and teens' program</li><li>Family cooking school</li><li>Kids' Muay Thai and yoga</li><li>Adults-only spa hours</li><li>Snorkel and kayak outings</li><li>Babysitting on request</li></ul>
+          <a class="btn ghost" href="#book" data-prog="family" style="align-self:flex-start">Book Family</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="qband paper" aria-label="Our philosophy">
+    <div class="wrap rise">
+      <svg viewBox="0 0 200 170" aria-hidden="true"><use href="#rootmark"/></svg>
+      <blockquote>&ldquo;We don&rsquo;t import wellness. <br>We grow it.&rdquo;</blockquote>
+      <p class="who">The Garden Kitchen</p>
+    </div>
+  </section>
+
+  <!-- DINING -->
+  <section id="dining">
+    <div class="wrap">
+      <div class="dining">
+        <div class="a rise"><div class="ph warm" style="--img:url(img/chefstable.jpg)" role="img" aria-label="Chef's table on the beach with lanterns"></div><p class="cap">The Chef's Table, every Friday on the sand</p></div>
+        <div class="b stack rise">
+          <p class="eyebrow">Dining</p>
+          <h2>The Garden <em>Kitchen</em></h2>
+          <p class="lead">Chef Bonnie cooks Thai and Chinese family recipes with whatever was picked that morning. Cruz, who has cooked beside him for years, runs the cooking school.</p>
+          <p>Every guest gets a nutrition intake on arrival, and the kitchen cooks to it: more protein for Strong, light and plant-forward for Reset. Healthy, without ever tasting like a diet.</p>
+          <a class="link" href="#book">Reserve the Chef's Table</a>
+        </div>
+        <div class="c rise"><div class="ph" style="--img:url(img/moestuin.jpg)" role="img" aria-label="Chef harvesting basil in the permaculture garden"></div><p class="cap">Morning harvest walk</p></div>
+        <div class="d rise"><div class="ph warm" style="--img:url(img/kookles.jpg)" role="img" aria-label="Guests pounding curry paste in stone mortars"></div><p class="cap">Cooking school in the garden kitchen</p></div>
+      </div>
+      <div class="tables rise">
+        <div><h4>Breakfast</h4><p>Tropical fruit, congee, eggs from our own hens and fresh juices.</p></div>
+        <div><h4>Lunch</h4><p>Garden salads, grilled fish from local fishermen, bright Thai curries.</p></div>
+        <div><h4>Dinner</h4><p>Family-style sharing plates under the lanterns, a new menu every night.</p></div>
+        <div><h4>Cooking school</h4><p>Curry pastes from scratch, dumplings and dim sum, to take home with you.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WELLNESS -->
+  <section id="wellness" class="full">
+    <div class="ph" style="--img:url(img/yoga.jpg)" role="img" aria-label="Open-air yoga sala at sunrise"></div>
+    <div class="wrap inner">
+      <div class="stack rise">
+        <p class="eyebrow" style="color:#EADFCB">Wellness &amp; movement</p>
+        <h2>Train hard. <em>Rest deeper.</em></h2>
+        <p class="lead">Yoga at sunrise, Muay Thai under a thatched roof, pilates by the garden and a spa built for recovery. Led by our own coaches and Thai trainers from the island.</p>
+        <a class="btn ghost" href="#day" style="align-self:flex-start">See a day at Rooted</a>
+      </div>
+    </div>
+  </section>
+  <div class="well-grid">
+    <div><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="17" cy="8" r="3"/><path d="M5 30c4-6 8-9 12-9s8 3 12 9M17 11v10M9 17l8-2 8 2"/></svg><h4>Yoga &amp; meditation</h4><p>Sunrise flow on the beach sala, yin and breathwork at sunset.</p></div>
+    <div><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M8 14c0-4 3-7 7-7h2c3 0 5 2 5 5v6c0 3-2 5-5 5h-4c-3 0-5-2-5-5v-4z"/><path d="M22 14h3a2 2 0 0 1 0 4h-3M11 23v5h8v-5"/></svg><h4>Muay Thai</h4><p>Pad work, technique and sparring with Thai trainers, every level.</p></div>
+    <div><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 24h28M7 24V14M27 24V14M7 18h20"/><circle cx="17" cy="10" r="3"/></svg><h4>Pilates &amp; fit</h4><p>Reformer, mat and functional strength with coach Jewel.</p></div>
+    <div><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M17 4c4 5 7 9 7 13a7 7 0 0 1-14 0c0-4 3-8 7-13z"/><path d="M6 30h22"/></svg><h4>Spa &amp; recovery</h4><p>Thai massage, ice bath, sauna and a silent meditation room.</p></div>
+  </div>
+
+  <section id="day" class="paper">
+    <div class="wrap daygrid">
+      <div class="ph ember" style="--img:url(img/muaythai.jpg)" role="img" aria-label="Morning Muay Thai session"></div>
+      <div class="rise">
+        <div class="stack"><p class="eyebrow">A day at Rooted</p><h2>From active <em>to still</em></h2><p class="lead">There is nothing to plan. Everything is offered, nothing is required.</p></div>
+        <ol class="day">
+          <li><time>06:30</time><div><b>Sunrise yoga &amp; meditation</b><span>Beach sala</span></div></li>
+          <li><time>08:00</time><div><b>Breakfast &amp; harvest walk</b><span>The Garden Kitchen</span></div></li>
+          <li><time>09:30</time><div><b>Muay Thai, pilates or functional fit</b><span>Ring and garden studio</span></div></li>
+          <li><time>12:30</time><div><b>Lunch</b><span>Under the trees</span></div></li>
+          <li><time>13:30</time><div><b>Beach, pool, massage or spa</b><span>Your time</span></div></li>
+          <li><time>15:30</time><div><b>Cooking school, coaching or workshop</b><span>By program</span></div></li>
+          <li><time>17:30</time><div><b>Stretching, yin or breathwork</b><span>Sunset deck</span></div></li>
+          <li><time>19:00</time><div><b>Dinner</b><span>Fridays: the Chef's Table on the beach</span></div></li>
+          <li><time>20:30</time><div><b>Mind in the ring, guest talk or fireside evening</b><span>The ring under the lights, or the Sala</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- MIND -->
+  <section id="mind" class="dark" aria-labelledby="mind-h">
+    <div class="wrap mind">
+      <div class="ph ember rise" style="--img:url(img/ring-avond.jpg)" role="img" aria-label="A coach leading a small group seated on the Muay Thai ring at night under festoon lights"></div>
+      <div class="stack rise">
+        <p class="eyebrow">Evenings in the ring</p>
+        <h2 id="mind-h">Calm <em>under pressure</em></h2>
+        <p class="lead">When the lights come on over the ring, the gloves come off. Our coaches sit down with a small group to talk about what really happens in your head under stress, and how to stay steady when it counts.</p>
+        <blockquote>&ldquo;A strong body gets you through the round. A calm mind gets you through life.&rdquo;</blockquote>
+        <ul><li>Mental health under stress</li><li>Breath control under load</li><li>Bouncing back from setbacks</li><li>Sleep, focus and recovery</li><li>Small groups, phones away</li><li>Three evenings a week</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCES -->
+  <section id="experiences" class="dark">
+    <div class="wrap">
+      <div class="sec-head rise">
+        <div class="stack"><p class="eyebrow">Experiences</p><h2>The island, <em>slowly</em></h2></div>
+        <p class="lead" style="max-width:420px">Hosted by people who live here. Book on arrival or let Bliss plan it for you in advance.</p>
+      </div>
+      <div class="exp rise">
+        <div><span class="n">Sea</span><h3>Longtail boat to hidden coves</h3><p>Snorkel over reefs, lunch on a sandbank, back before sunset.</p></div>
+        <div><span class="n">Sunrise</span><h3>Paddle out at first light</h3><p>Kayak or SUP across a glassy bay while the island wakes up.</p></div>
+        <div><span class="n">Culture</span><h3>Temple morning with a monk</h3><p>A quiet visit and a short meditation, with a local guide.</p></div>
+        <div><span class="n">Market</span><h3>Night market with Chef Bonnie</h3><p>Taste your way through the stalls and shop for the next day's class.</p></div>
+        <div><span class="n">Sail</span><h3>Sunset sail</h3><p>Fresh coconut, a light supper on board and the sun going down.</p></div>
+        <div><span class="n">Nature</span><h3>Jungle walk to the waterfall</h3><p>An easy hike through the interior, ending with a cold swim.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section id="calendar">
+    <div class="wrap">
+      <div class="sec-head rise">
+        <div class="stack"><p class="eyebrow">Retreat calendar</p><h2>Upcoming <em>retreat weeks</em></h2></div>
+        <p class="lead" style="max-width:420px">Each week has its own focus and, for Growth weeks, its own guest speaker in residence.</p>
+      </div>
+      <div class="cal-filter" role="group" aria-label="Filter by retreat">
+        <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-f="reset" aria-pressed="false">Reset</button>
+        <button class="chip" type="button" data-f="strong" aria-pressed="false">Strong</button>
+        <button class="chip" type="button" data-f="growth" aria-pressed="false">Growth</button>
+        <button class="chip" type="button" data-f="family" aria-pressed="false">Family</button>
+      </div>
+      <ul class="events" id="events"></ul>
+      <p class="note">Preview calendar for the opening season. Dates, guest speakers and availability are indicative.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book" class="paper">
+    <div class="wrap">
+      <div class="sec-head rise">
+        <div class="stack"><p class="eyebrow">Reservations</p><h2>Book <em>your stay</em></h2></div>
+        <p class="lead" style="max-width:420px">Choose your residence, retreat and dates. We confirm every request personally within one day.</p>
+      </div>
+      <div class="booking">
+        <form class="panel" id="bookForm" novalidate>
+          <div class="field"><span class="legend" id="lg-stay">Residence</span>
+            <div class="opts" role="group" aria-labelledby="lg-stay" id="stayOpts">
+              <button type="button" class="opt" data-v="suite" aria-pressed="true"><b>Garden Pool Suite</b><small>Up to 2 · €680</small></button>
+              <button type="button" class="opt" data-v="villa" aria-pressed="false"><b>Ocean Pool Villa</b><small>Up to 4 · from €1,280</small></button>
+              <button type="button" class="opt" data-v="family" aria-pressed="false"><b>Family Beach House</b><small>Up to 4 · €1,240</small></button>
+            </div>
+          </div>
+          <div class="field"><span class="legend" id="lg-prog">Retreat</span>
+            <div class="opts four" role="group" aria-labelledby="lg-prog" id="progOpts">
+              <button type="button" class="opt" data-v="reset" aria-pressed="true"><b>Reset</b><small>Gentle</small></button>
+              <button type="button" class="opt" data-v="strong" aria-pressed="false"><b>Strong</b><small>Intense</small></button>
+              <button type="button" class="opt" data-v="growth" aria-pressed="false"><b>Growth</b><small>Coaching</small></button>
+              <button type="button" class="opt" data-v="family" aria-pressed="false"><b>Family</b><small>All ages</small></button>
+            </div>
+          </div>
+          <div class="field">
+            <span class="legend">Dates <span id="dateHint" style="letter-spacing:.05em;text-transform:none;font-weight:300">· pick your arrival, then your departure</span></span>
+            <div class="month-head">
+              <button type="button" class="nav-btn" id="prevM" aria-label="Previous month">‹</button>
+              <b id="monthLabel" aria-live="polite"></b>
+              <button type="button" class="nav-btn" id="nextM" aria-label="Next month">›</button>
+            </div>
+            <div class="grid-cal" id="cal"></div>
+          </div>
+          <div class="row2">
+            <label class="field"><span>Adults</span><select id="adults"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></label>
+            <label class="field"><span>Children (4–12)</span><select id="kids"><option selected>0</option><option>1</option><option>2</option><option>3</option></select></label>
+          </div>
+          <div class="row2">
+            <label class="field"><span>Full name</span><input id="name" autocomplete="name" required></label>
+            <label class="field"><span>Email</span><input id="email" type="email" autocomplete="email" required></label>
+          </div>
+          <label class="field"><span>Anything we should know?</span><textarea id="notes" rows="3" placeholder="Dietary wishes, injuries, celebrations…"></textarea></label>
+        </form>
+        <aside class="summary" aria-labelledby="sumTitle">
+          <p class="eyebrow">Your stay</p>
+          <h3 id="sumTitle">Garden Pool Suite</h3>
+          <ul class="sum-lines" id="sumLines"></ul>
+          <div class="total"><span>Total</span><b id="total">€0</b></div>
+          <p class="incl">Includes full garden-to-table board, your retreat program, airport transfers and taxes.</p>
+          <p class="hint" id="sumHint" aria-live="polite"></p>
+          <button class="btn solid" type="submit" form="bookForm" id="sendBtn">Request booking</button>
+          <div class="confirm" id="confirm" hidden aria-live="polite"></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section aria-labelledby="gal-h">
+    <div class="wrap">
+      <div class="sec-head rise"><div class="stack"><p class="eyebrow">Gallery</p><h2 id="gal-h">Feet <em>in the sand</em></h2></div></div>
+      <div class="gallery">
+        <div class="ph g1" style="--img:url(img/resort.jpg)" role="img" aria-label="Aerial view of the retreat"></div>
+        <div class="ph warm" style="--img:url(img/villa.jpg)" role="img" aria-label="Villa interior"></div>
+        <div class="ph" style="--img:url(img/yoga.jpg)" role="img" aria-label="Yoga sala at sunrise"></div>
+        <div class="ph ember g4" style="--img:url(img/muaythai.jpg)" role="img" aria-label="Muay Thai ring"></div>
+        <div class="ph warm" style="--img:url(img/moestuin.jpg)" role="img" aria-label="Kitchen garden"></div>
+        <div class="ph ember" style="--img:url(img/beachclub.jpg)" role="img" aria-label="Beach club at sunset"></div>
+        <div class="ph warm" style="--img:url(img/chefstable.jpg)" role="img" aria-label="Chef's table on the beach"></div>
+        <div class="ph warm gw" style="--img:url(img/voeten-cirkel.jpg)" role="img" aria-label="Bare feet in the sand during a sunset meditation circle"></div>
+        <div class="ph" style="--img:url(img/voeten-familie.jpg);background-position:center 75%" role="img" aria-label="A family's bare feet side by side in white sand"></div>
+        <div class="ph ember" style="--img:url(img/ring-avond.jpg)" role="img" aria-label="The ring at night under festoon lights"></div>
+        <div class="ph warm" style="--img:url(img/voeten.jpg);background-position:center 70%" role="img" aria-label="Bare feet in the surf at sunrise"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="paper">
+    <div class="wrap story">
+      <div class="ph warm rise" style="--img:url(img/moestuin.jpg)" role="img" aria-label="The permaculture garden in the morning"></div>
+      <div class="stack rise">
+        <p class="eyebrow">Our story</p>
+        <h2>Hosted by <em>two families</em></h2>
+        <p class="lead">Rooted is not a hotel with staff. It is a home where, for a while, you become part of the family.</p>
+        <div class="hosts">
+          <div><h4>The Bonnie family</h4><p>Chef Bonnie is Thai and a known name in Asian cuisine. His wife, an entrepreneur through and through, runs the day-to-day with Marco. Their daughters Lua and Nia are our youngest hosts.</p></div>
+          <div><h4>The Wilson family</h4><p>Marco leads Rooted and guards the vision. Jaime is our health coach, Jewel our fitness coach, Bliss runs guest experience and Cruz cooks beside Bonnie.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECO -->
+  <section class="dark" aria-labelledby="eco-h">
+    <div class="wrap">
+      <div class="narrow stack rise"><p class="eyebrow">Sustainability</p><h2 id="eco-h">Luxury <em>that adds up</em></h2><p class="lead">Built from bamboo, local timber and stone in the tradition of Thai houses, and run on the sun and the rain.</p></div>
+      <div class="eco rise">
+        <div><strong>0</strong><h4>Single-use plastic</h4><p>Refill stations, glass and our own compost loop.</p></div>
+        <div><strong>3×</strong><h4>Garden meals a day</h4><p>From our permaculture garden, hens and local fishermen.</p></div>
+        <div><strong>☀</strong><h4>Solar powered</h4><p>Solar roofs, rainwater harvesting and reed-bed water treatment.</p></div>
+        <div><strong>Local</strong><h4>Island team</h4><p>Trainers, cooks, gardeners and craftspeople from the island.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section aria-labelledby="faq-h">
+    <div class="wrap faq">
+      <div class="stack rise"><p class="eyebrow">Good to know</p><h2 id="faq-h">Questions</h2><p class="lead">Can't find your answer? Write to our hosts and we'll get back to you within a day.</p></div>
+      <div class="rise">
+        <details><summary>Where is Rooted?</summary><p>On a Thai island in the Gulf or the Andaman Sea. We will announce the exact location soon. Transfers from the nearest airport are included in every stay.</p></details>
+        <details><summary>Do I have to join every session?</summary><p>No. Everything is offered and nothing is required. Your coach helps you choose what fits your goals.</p></details>
+        <details><summary>Can you cater to my diet?</summary><p>Yes. Your nutrition intake on arrival sets your menu, and the kitchen handles allergies, vegan and other preferences.</p></details>
+        <details><summary>Are children welcome?</summary><p>Children aged 4 and up are welcome during Family weeks, with a full kids' program. Other weeks are best suited to guests 16 and older.</p></details>
+        <details><summary>Is Rooted open all year?</summary><p>Yes, 365 days a year. Each season brings its own produce to the garden and its own rhythm to the sea.</p></details>
+        <details><summary>What is your cancellation policy?</summary><p>Free cancellation up to 30 days before arrival. Within 30 days we offer a credit towards a future stay.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="qband photo" aria-label="Our promise">
+    <div class="ph" style="--img:url(img/voeten.jpg);background-position:center 70%" role="img" aria-label="Bare feet in the surf on a white beach at sunrise"></div>
+    <div class="wrap rise">
+      <blockquote>&ldquo;Come to rest. <em>Leave rooted.</em>&rdquo;</blockquote>
+      <p class="who">Clean food · Clean air · Clean ocean · Clean future</p>
+    </div>
+  </section>
+
+  <!-- CLOSING / NEWSLETTER -->
+  <section class="closing" aria-labelledby="news-h">
+    <div class="ph" role="img" aria-label="Beach club at sunset with daybeds and lanterns"></div>
+    <div class="wrap inner">
+      <svg viewBox="0 0 200 170" width="120" height="102" aria-hidden="true"><use href="#rootmark"/></svg>
+      <h2 id="news-h">Be the first <em>to stay</em></h2>
+      <p class="lead" style="color:#EEE8DE;max-width:520px">Join the founding guest list for opening dates, early rates and the first guest speakers.</p>
+      <form class="news" id="newsForm" novalidate>
+        <label class="sr" for="newsEmail">Email address</label>
+        <input id="newsEmail" type="email" placeholder="Your email address" autocomplete="email">
+        <button class="btn solid" type="submit">Join</button>
+      </form>
+      <p id="newsMsg" aria-live="polite" style="min-height:1.6em"></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="stack">
+        <a class="logo" href="#top" aria-label="Rooted, back to top">
+          <svg class="rm" aria-hidden="true"><use href="#rootmark"/></svg>
+          <span class="word">ROOTED</span>
+        </a>
+        <p>Eco luxury retreat on a Thai island. Clean food, clean air, clean ocean, clean future.</p>
+      </div>
+      <div><h4>Stay</h4><ul><li><a href="#stay">Residences</a></li><li><a href="#programs">Retreats</a></li><li><a href="#book">Reservations</a></li><li><a href="#calendar">Calendar</a></li></ul></div>
+      <div><h4>Discover</h4><ul><li><a href="#dining">Dining</a></li><li><a href="#wellness">Wellness</a></li><li><a href="#experiences">Experiences</a></li><li><a href="#promise">Our promise</a></li><li><a href="#story">Our story</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>hello@rooted-retreat.com</li><li>Thailand · location soon</li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Rooted Retreat</span><span>Concept preview. Rates and dates are indicative.</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // header becomes solid after the hero
+  var head=document.getElementById('head');
+  function onScroll(){head.classList.toggle('solid',window.scrollY>80)}
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  // drawer
+  var drawer=document.getElementById('drawer'),menuBtn=document.getElementById('menuBtn'),closeBtn=document.getElementById('closeBtn');
+  function setDrawer(open){drawer.hidden=!open;menuBtn.setAttribute('aria-expanded',String(open));if(open)closeBtn.focus();else menuBtn.focus()}
+  menuBtn.addEventListener('click',function(){setDrawer(true)});
+  closeBtn.addEventListener('click',function(){setDrawer(false)});
+  drawer.addEventListener('click',function(e){if(e.target.tagName==='A')setDrawer(false)});
+  drawer.addEventListener('keydown',function(e){if(e.key==='Escape')setDrawer(false)});
+
+  // gentle rise for sections below the fold (visible at rest)
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=[].slice.call(document.querySelectorAll('.rise'));
+    var vh=window.innerHeight;
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('pre');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add('pre');io.observe(el)}});
+  }
+
+  // roots mark grows when it scrolls into view; click to replay
+  var grow=document.getElementById('growMark');
+  if(grow&&'IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var gt;
+    function playGrow(){clearTimeout(gt);grow.classList.remove('play');grow.classList.add('armed');void grow.getBoundingClientRect();grow.classList.add('play');gt=setTimeout(function(){grow.classList.remove('armed','play')},3600)}
+    grow.classList.add('armed');
+    var gio=new IntersectionObserver(function(en){if(en[0].isIntersecting){playGrow();gio.disconnect()}},{threshold:.5});
+    gio.observe(grow);
+    grow.addEventListener('click',playGrow);
+  }
+
+  // residence photo carousels
+  [].forEach.call(document.querySelectorAll('[data-car]'),function(car){
+    var track=car.querySelector('.car-track'),slides=[].slice.call(track.children),prev=car.querySelector('.prev'),next=car.querySelector('.next'),cap=car.querySelector('.car-cap'),dotsEl=car.querySelector('.car-dots'),cur=-1;
+    var dots=slides.map(function(sl,i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Photo '+(i+1)+' of '+slides.length);b.addEventListener('click',function(){go(i)});dotsEl.appendChild(b);return b});
+    function go(i){i=Math.max(0,Math.min(slides.length-1,i));track.scrollTo({left:i*track.clientWidth})}
+    function sync(){var i=Math.round(track.scrollLeft/Math.max(1,track.clientWidth));if(i===cur)return;cur=i;dots.forEach(function(d,k){d.setAttribute('aria-current',String(k===i))});prev.disabled=i===0;next.disabled=i===slides.length-1;cap.textContent=(i+1)+' / '+slides.length+' · '+slides[i].dataset.cap}
+    prev.addEventListener('click',function(){go(cur-1)});next.addEventListener('click',function(){go(cur+1)});
+    track.addEventListener('scroll',sync,{passive:true});
+    track.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){go(cur+1);e.preventDefault()}else if(e.key==='ArrowLeft'){go(cur-1);e.preventDefault()}});
+    window.addEventListener('resize',function(){track.scrollLeft=cur*track.clientWidth});
+    sync();
+  });
+
+  // program tabs
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function selectTab(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',String(on));x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on})}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){selectTab(t)});
+    t.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(d){var n=tabs[(i+d+tabs.length)%tabs.length];selectTab(n);n.focus();e.preventDefault()}});
+  });
+
+  // ===== booking state =====
+  var RATES={suite:{name:'Garden Pool Suite',base:680,incl:2,max:2,extra:0},villa:{name:'Ocean Pool Villa',base:1280,incl:2,max:4,extra:320},family:{name:'Family Beach House',base:1240,incl:4,max:4,extra:0}};
+  var PROGS={reset:'Reset',strong:'Strong',growth:'Growth',family:'Family'};
+  var GROWTH_FEE=450; // per adult, guest speaker program
+  var state={stay:'suite',prog:'reset',start:null,end:null};
+  var today=new Date();today.setHours(0,0,0,0);
+  var minDate=new Date(today);minDate.setDate(minDate.getDate()+14);
+  var view=new Date(minDate.getFullYear(),minDate.getMonth(),1);
+  var fmt=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric'});
+  var money=function(n){return '€'+Math.round(n).toLocaleString('en-US')};
+  function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+  function fromIso(s){var p=s.split('-');return new Date(+p[0],+p[1]-1,+p[2])}
+  // a few sample fully-booked nights to show availability
+  function booked(d){var k=(d.getFullYear()*372+d.getMonth()*31+d.getDate())%17;return k===3||k===4}
+
+  function setPressed(groupId,v){[].forEach.call(document.querySelectorAll('#'+groupId+' .opt'),function(b){b.setAttribute('aria-pressed',String(b.dataset.v===v))})}
+  document.getElementById('stayOpts').addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;state.stay=b.dataset.v;setPressed('stayOpts',state.stay);render()});
+  document.getElementById('progOpts').addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;state.prog=b.dataset.v;setPressed('progOpts',state.prog);render()});
+  ['adults','kids'].forEach(function(id){document.getElementById(id).addEventListener('change',render)});
+
+  var cal=document.getElementById('cal');
+  function drawCal(){
+    var y=view.getFullYear(),m=view.getMonth();
+    document.getElementById('monthLabel').textContent=new Intl.DateTimeFormat('en-GB',{month:'long',year:'numeric'}).format(view);
+    document.getElementById('prevM').disabled=(y===minDate.getFullYear()&&m===minDate.getMonth());
+    var html=['Mo','Tu','We','Th','Fr','Sa','Su'].map(function(d){return '<div class="dow" aria-hidden="true">'+d+'</div>'}).join('');
+    var first=(new Date(y,m,1).getDay()+6)%7, days=new Date(y,m+1,0).getDate();
+    for(var i=0;i<first;i++)html+='<div></div>';
+    for(var d=1;d<=days;d++){
+      var dt=new Date(y,m,d),cls='day-btn',dis=dt<minDate||booked(dt);
+      if(state.start&&+dt===+state.start)cls+=' edge';
+      if(state.end&&+dt===+state.end)cls+=' edge';
+      if(state.start&&state.end&&dt>state.start&&dt<state.end)cls+=' in';
+      html+='<button type="button" class="'+cls+'" data-d="'+iso(dt)+'"'+(dis?' disabled':'')+' aria-label="'+fmt.format(dt)+(dis?', unavailable':'')+'">'+d+'</button>';
+    }
+    cal.innerHTML=html;
+  }
+  cal.addEventListener('click',function(e){
+    var b=e.target.closest('.day-btn');if(!b||b.disabled)return;var d=fromIso(b.dataset.d);
+    if(!state.start||state.end||d<=state.start){state.start=d;state.end=null}
+    else{
+      var c=new Date(state.start),ok=true;while(c<d){if(booked(c)){ok=false;break}c.setDate(c.getDate()+1)}
+      if(ok)state.end=d;else{state.start=d;state.end=null}
+    }
+    render();
+  });
+  document.getElementById('prevM').addEventListener('click',function(){view.setMonth(view.getMonth()-1);drawCal()});
+  document.getElementById('nextM').addEventListener('click',function(){view.setMonth(view.getMonth()+1);drawCal()});
+
+  function render(){
+    var r=RATES[state.stay],a=+document.getElementById('adults').value,k=+document.getElementById('kids').value,g=a+k;
+    var nights=state.start&&state.end?Math.round((state.end-state.start)/864e5):0;
+    var hint='';
+    if(g>r.max)hint=r.name+' sleeps up to '+r.max+' guests. Choose a larger residence or fewer guests.';
+    else if(state.prog==='family'&&k===0)hint='';
+    else if(k>0&&state.prog!=='family')hint='Children are welcome during Family weeks.';
+    var extraGuests=Math.max(0,g-r.incl), perNight=r.base+extraGuests*r.extra;
+    var growth=state.prog==='growth'?GROWTH_FEE*a:0;
+    var total=nights*perNight+growth;
+    document.getElementById('sumTitle').textContent=r.name;
+    var lines=[['Retreat',PROGS[state.prog]],['Dates',nights?fmt.format(state.start)+' – '+fmt.format(state.end):'Select dates'],['Nights',nights||'–'],['Guests',a+' adult'+(a>1?'s':'')+(k?', '+k+' child'+(k>1?'ren':''):'')],['Rate per night',money(perNight)]];
+    if(growth)lines.push(['Guest speaker program',money(growth)]);
+    document.getElementById('sumLines').innerHTML=lines.map(function(l){return '<li><span>'+l[0]+'</span><span>'+l[1]+'</span></li>'}).join('');
+    document.getElementById('total').textContent=money(total);
+    document.getElementById('sumHint').textContent=hint;
+    drawCal();
+  }
+
+  // prefill from Reserve / Book links
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-stay],[data-prog]');if(!a)return;
+    if(a.dataset.stay){state.stay=a.dataset.stay;setPressed('stayOpts',state.stay)}
+    if(a.dataset.prog){state.prog=a.dataset.prog;setPressed('progOpts',state.prog)}
+    render();
+  });
+
+  // hero quick booking
+  var qbIn=document.getElementById('qbIn');qbIn.min=iso(minDate);qbIn.value=iso(minDate);
+  document.getElementById('quickBook').addEventListener('submit',function(e){
+    e.preventDefault();
+    var s=qbIn.value?fromIso(qbIn.value):new Date(minDate);if(s<minDate)s=new Date(minDate);
+    var n=+document.getElementById('qbNights').value,g=+document.getElementById('qbGuests').value;
+    state.start=s;state.end=new Date(s);state.end.setDate(s.getDate()+n);
+    state.prog=document.getElementById('qbProg').value;setPressed('progOpts',state.prog);
+    if(g>2&&state.stay==='suite'){state.stay='villa';setPressed('stayOpts','villa')}
+    document.getElementById('adults').value=String(g);
+    view=new Date(s.getFullYear(),s.getMonth(),1);
+    render();
+    document.getElementById('book').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  });
+
+  // request booking (concept: nothing is sent)
+  document.getElementById('bookForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('name').value.trim(),email=document.getElementById('email').value.trim(),box=document.getElementById('confirm');
+    var r=RATES[state.stay],g=+document.getElementById('adults').value+ +document.getElementById('kids').value;
+    var msg='';
+    if(!state.start||!state.end)msg='Choose your arrival and departure dates in the calendar.';
+    else if(g>r.max)msg='Too many guests for this residence.';
+    else if(!name||!/^\S+@\S+\.\S+$/.test(email))msg='Add your name and a valid email address.';
+    box.hidden=false;
+    if(msg){box.innerHTML='<b>Almost there</b><span></span>';box.querySelector('span').textContent=msg;return}
+    box.innerHTML='<b></b><span>This is a concept preview, so no booking has been made yet. Once Rooted opens, this is where your request reaches our hosts.</span>';
+    box.querySelector('b').textContent='Thank you, '+name.split(' ')[0]+'.';
+  });
+
+  // newsletter (concept)
+  document.getElementById('newsForm').addEventListener('submit',function(e){
+    e.preventDefault();var v=document.getElementById('newsEmail').value.trim();
+    document.getElementById('newsMsg').textContent=/^\S+@\S+\.\S+$/.test(v)?'Thank you. The guest list opens with our launch; nothing has been sent yet.':'Enter a valid email address.';
+  });
+
+  // ===== retreat calendar =====
+  var EVENTS=[
+    {s:'2027-01-09',n:7,p:'reset',t:'New Year Reset',d:'Sleep, breath and a slow start to the year',st:'few'},
+    {s:'2027-01-23',n:7,p:'strong',t:'Strong: Muay Thai Foundations',d:'Technique and conditioning with Thai trainers',st:'open'},
+    {s:'2027-02-06',n:5,p:'growth',t:'Growth: Lead from Rest',d:'Guest speaker in residence: [to be announced]',st:'open'},
+    {s:'2027-02-20',n:7,p:'family',t:'Family Week',d:'Cooking school, kids\' Muay Thai and beach days',st:'few'},
+    {s:'2027-03-06',n:14,p:'reset',t:'Deep Reset',d:'Two weeks of plant-forward food and daily yoga',st:'open'},
+    {s:'2027-03-27',n:7,p:'strong',t:'Strong: Fight Camp',d:'Two sessions a day, ending with a ring day',st:'wait'},
+    {s:'2027-04-10',n:7,p:'family',t:'Songkran Family Week',d:'Celebrate Thai New Year with the families',st:'open'},
+    {s:'2027-04-24',n:5,p:'growth',t:'Growth: Food as Medicine',d:'Guest speaker in residence: [to be announced]',st:'open'}
+  ];
+  var ST={open:['open','Available'],few:['few','Few residences left'],wait:['wait','Waitlist']};
+  var list=document.getElementById('events'),filter='all';
+  function drawEvents(){
+    list.innerHTML='';
+    EVENTS.filter(function(ev){return filter==='all'||ev.p===filter}).forEach(function(ev){
+      var s=fromIso(ev.s),e2=new Date(s);e2.setDate(s.getDate()+ev.n);
+      var li=document.createElement('li');li.className='event';
+      var dm=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short'});
+      li.innerHTML='<div class="when"></div><div class="what"><b></b><span></span></div><span class="status"></span><a class="btn ghost" href="#book">'+(ev.st==='wait'?'Join waitlist':'Reserve')+'</a>';
+      li.querySelector('.when').innerHTML=dm.format(s)+' – '+dm.format(e2)+'<small>'+ev.n+' nights · '+PROGS[ev.p]+'</small>';
+      li.querySelector('b').textContent=ev.t;li.querySelector('.what span').textContent=ev.d;
+      var stEl=li.querySelector('.status');stEl.classList.add(ST[ev.st][0]);stEl.textContent=ST[ev.st][1];
+      li.querySelector('a').addEventListener('click',function(){
+        state.prog=ev.p;setPressed('progOpts',ev.p);state.start=s;state.end=e2;
+        if(ev.p==='family'){state.stay='family';setPressed('stayOpts','family')}
+        view=new Date(s.getFullYear(),s.getMonth(),1);render();
+      });
+      list.appendChild(li);
+    });
+  }
+  [].forEach.call(document.querySelectorAll('.chip'),function(c){c.addEventListener('click',function(){filter=c.dataset.f;[].forEach.call(document.querySelectorAll('.chip'),function(x){x.setAttribute('aria-pressed',String(x===c))});drawEvents()})});
+  // event dates bypass the sample "booked" nights
+  var _booked=booked;booked=function(d){if(EVENTS.some(function(ev){var s=fromIso(ev.s),e2=new Date(s);e2.setDate(s.getDate()+ev.n);return d>=s&&d<=e2}))return false;return _booked(d)};
+
+  drawEvents();render();
+})();
+</script>
+
+</body></html>
