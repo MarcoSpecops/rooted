@@ -107,8 +107,10 @@ section{padding-block:clamp(80px,11vw,144px)}
 .hero .ph{position:absolute;inset:0;--img:url(img/resort.jpg)}
 .hero .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,20,.45) 0%,rgba(8,20,20,.05) 30%,rgba(8,20,20,.15) 55%,rgba(8,20,20,.72) 100%)}
 @media (prefers-reduced-motion:no-preference){.hero .ph:not(.has-video){animation:drift 26s ease-in-out infinite alternate}@keyframes drift{from{transform:scale(1.02)}to{transform:scale(1.1)}}}
-.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s ease}
 .hero video.on{opacity:1}
+.hero video.on.dim{opacity:0}
+.hero .ph.vid-on{background:#0A1C1D}
 .hero-copy{position:relative;z-index:1;width:100%;padding-block:0 40px}
 .hero h1{font-family:var(--f-display);font-weight:300;font-size:clamp(52px,9vw,128px);line-height:.95;letter-spacing:-.01em}
 .hero h1 em{font-weight:300}
@@ -1127,7 +1129,13 @@ footer{background:var(--lagoon);color:var(--on-dark-muted);padding-block:72px 40
   var hv=document.getElementById('heroVideo');
   if(hv){
     if(matchMedia('(prefers-reduced-motion: reduce)').matches||(navigator.connection&&navigator.connection.saveData)){hv.remove()}
-    else{hv.preload='auto';hv.addEventListener('playing',function(){hv.classList.add('on')});var pr=hv.play();if(pr&&pr.catch)pr.catch(function(){})}
+    else{
+      hv.preload='auto';
+      hv.addEventListener('playing',function(){hv.classList.add('on');hv.parentNode.classList.add('vid-on')});
+      // fade through the dark at the end so dawn starts again softly
+      hv.addEventListener('timeupdate',function(){var d=hv.duration;if(!d)return;if(hv.currentTime>d-1.3)hv.classList.add('dim');else if(hv.currentTime<1)hv.classList.remove('dim')});
+      var pr=hv.play();if(pr&&pr.catch)pr.catch(function(){});
+    }
   }
 
   // roots mark grows when it scrolls into view; click to replay
